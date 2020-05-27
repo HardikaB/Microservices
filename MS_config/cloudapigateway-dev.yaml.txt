@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: currency-exchange-service
+        uri: lb://currency-exchange
+        predicates:
+	- Path=/all
