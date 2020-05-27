@@ -3,6 +3,6 @@ spring:
     gateway:
       routes:
       - id: currency-exchange-service
-        uri: lb://currency-exchange
+        uri: http://localhost:57764/currency-exchange
         predicates:
 	- Path=/all
